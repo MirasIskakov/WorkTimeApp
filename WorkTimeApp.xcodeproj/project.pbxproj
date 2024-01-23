@@ -7,20 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D17DDEFE1B6AE4426866287B /* Pods_WorkTimeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C235390E195F62473A4CD5E1 /* Pods_WorkTimeApp.framework */; };
 		D8E38E532B5F7E30004D6EA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E38E522B5F7E30004D6EA2 /* AppDelegate.swift */; };
 		D8E38E552B5F7E30004D6EA2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E38E542B5F7E30004D6EA2 /* SceneDelegate.swift */; };
 		D8E38E572B5F7E30004D6EA2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E38E562B5F7E30004D6EA2 /* ViewController.swift */; };
-		D8E38E5A2B5F7E30004D6EA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8E38E582B5F7E30004D6EA2 /* Main.storyboard */; };
 		D8E38E5C2B5F7E31004D6EA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8E38E5B2B5F7E31004D6EA2 /* Assets.xcassets */; };
 		D8E38E5F2B5F7E31004D6EA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8E38E5D2B5F7E31004D6EA2 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3DD50970D7C880C6E5D4B0D2 /* Pods-WorkTimeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorkTimeApp.release.xcconfig"; path = "Target Support Files/Pods-WorkTimeApp/Pods-WorkTimeApp.release.xcconfig"; sourceTree = "<group>"; };
+		82D09031478710924D4F7F41 /* Pods-WorkTimeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorkTimeApp.debug.xcconfig"; path = "Target Support Files/Pods-WorkTimeApp/Pods-WorkTimeApp.debug.xcconfig"; sourceTree = "<group>"; };
+		C235390E195F62473A4CD5E1 /* Pods_WorkTimeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WorkTimeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8E38E4F2B5F7E30004D6EA2 /* WorkTimeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkTimeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8E38E522B5F7E30004D6EA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8E38E542B5F7E30004D6EA2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D8E38E562B5F7E30004D6EA2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D8E38E592B5F7E30004D6EA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D8E38E5B2B5F7E31004D6EA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D8E38E5E2B5F7E31004D6EA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D8E38E602B5F7E31004D6EA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -31,17 +33,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D17DDEFE1B6AE4426866287B /* Pods_WorkTimeApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CB3574971E701DB5D9B34CFB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				82D09031478710924D4F7F41 /* Pods-WorkTimeApp.debug.xcconfig */,
+				3DD50970D7C880C6E5D4B0D2 /* Pods-WorkTimeApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D8E38E462B5F7E2F004D6EA2 = {
 			isa = PBXGroup;
 			children = (
 				D8E38E512B5F7E30004D6EA2 /* WorkTimeApp */,
 				D8E38E502B5F7E30004D6EA2 /* Products */,
+				CB3574971E701DB5D9B34CFB /* Pods */,
+				E99E17C4514FF6AB8E6AFCA8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +71,38 @@
 		D8E38E512B5F7E30004D6EA2 /* WorkTimeApp */ = {
 			isa = PBXGroup;
 			children = (
+				D8E38E662B5F8E88004D6EA2 /* Application */,
+				D8E38E562B5F7E30004D6EA2 /* ViewController.swift */,
+				D8E38E672B5F8EA6004D6EA2 /* SupportingFiles */,
+			);
+			path = WorkTimeApp;
+			sourceTree = "<group>";
+		};
+		D8E38E662B5F8E88004D6EA2 /* Application */ = {
+			isa = PBXGroup;
+			children = (
 				D8E38E522B5F7E30004D6EA2 /* AppDelegate.swift */,
 				D8E38E542B5F7E30004D6EA2 /* SceneDelegate.swift */,
-				D8E38E562B5F7E30004D6EA2 /* ViewController.swift */,
-				D8E38E582B5F7E30004D6EA2 /* Main.storyboard */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		D8E38E672B5F8EA6004D6EA2 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
 				D8E38E5B2B5F7E31004D6EA2 /* Assets.xcassets */,
 				D8E38E5D2B5F7E31004D6EA2 /* LaunchScreen.storyboard */,
 				D8E38E602B5F7E31004D6EA2 /* Info.plist */,
 			);
-			path = WorkTimeApp;
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		E99E17C4514FF6AB8E6AFCA8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C235390E195F62473A4CD5E1 /* Pods_WorkTimeApp.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +112,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D8E38E632B5F7E31004D6EA2 /* Build configuration list for PBXNativeTarget "WorkTimeApp" */;
 			buildPhases = (
+				27E6427729A393CDD2514BC8 /* [CP] Check Pods Manifest.lock */,
 				D8E38E4B2B5F7E30004D6EA2 /* Sources */,
 				D8E38E4C2B5F7E30004D6EA2 /* Frameworks */,
 				D8E38E4D2B5F7E30004D6EA2 /* Resources */,
+				DF31B7DFA25A2839A6460C2D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,11 +167,52 @@
 			files = (
 				D8E38E5F2B5F7E31004D6EA2 /* LaunchScreen.storyboard in Resources */,
 				D8E38E5C2B5F7E31004D6EA2 /* Assets.xcassets in Resources */,
-				D8E38E5A2B5F7E30004D6EA2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		27E6427729A393CDD2514BC8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WorkTimeApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF31B7DFA25A2839A6460C2D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WorkTimeApp/Pods-WorkTimeApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WorkTimeApp/Pods-WorkTimeApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WorkTimeApp/Pods-WorkTimeApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D8E38E4B2B5F7E30004D6EA2 /* Sources */ = {
@@ -147,14 +228,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D8E38E582B5F7E30004D6EA2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D8E38E592B5F7E30004D6EA2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D8E38E5D2B5F7E31004D6EA2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -282,18 +355,20 @@
 		};
 		D8E38E642B5F7E31004D6EA2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82D09031478710924D4F7F41 /* Pods-WorkTimeApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = WorkTimeApp/Info.plist;
+				INFOPLIST_FILE = WorkTimeApp/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboar;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,26 +376,31 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = iskakov.WorkTimeApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		D8E38E652B5F7E31004D6EA2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DD50970D7C880C6E5D4B0D2 /* Pods-WorkTimeApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = WorkTimeApp/Info.plist;
+				INFOPLIST_FILE = WorkTimeApp/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboar;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -328,9 +408,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = iskakov.WorkTimeApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
