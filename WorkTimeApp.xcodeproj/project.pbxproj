@@ -13,6 +13,7 @@
 		D8E38E572B5F7E30004D6EA2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E38E562B5F7E30004D6EA2 /* ViewController.swift */; };
 		D8E38E5C2B5F7E31004D6EA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8E38E5B2B5F7E31004D6EA2 /* Assets.xcassets */; };
 		D8E38E5F2B5F7E31004D6EA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8E38E5D2B5F7E31004D6EA2 /* LaunchScreen.storyboard */; };
+		D8E38E6E2B5FC27F004D6EA2 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E38E6D2B5FC27F004D6EA2 /* R.generated.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		D8E38E5B2B5F7E31004D6EA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D8E38E5E2B5F7E31004D6EA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D8E38E602B5F7E31004D6EA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8E38E6D2B5FC27F004D6EA2 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +48,6 @@
 				82D09031478710924D4F7F41 /* Pods-WorkTimeApp.debug.xcconfig */,
 				3DD50970D7C880C6E5D4B0D2 /* Pods-WorkTimeApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -71,9 +72,10 @@
 		D8E38E512B5F7E30004D6EA2 /* WorkTimeApp */ = {
 			isa = PBXGroup;
 			children = (
+				D8E38E6A2B5FB303004D6EA2 /* Resources */,
 				D8E38E662B5F8E88004D6EA2 /* Application */,
-				D8E38E562B5F7E30004D6EA2 /* ViewController.swift */,
 				D8E38E672B5F8EA6004D6EA2 /* SupportingFiles */,
+				D8E38E562B5F7E30004D6EA2 /* ViewController.swift */,
 			);
 			path = WorkTimeApp;
 			sourceTree = "<group>";
@@ -97,6 +99,22 @@
 			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
+		D8E38E6A2B5FB303004D6EA2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D8E38E6B2B5FB3BD004D6EA2 /* Generated */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D8E38E6B2B5FB3BD004D6EA2 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				D8E38E6D2B5FC27F004D6EA2 /* R.generated.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
 		E99E17C4514FF6AB8E6AFCA8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +135,7 @@
 				D8E38E4C2B5F7E30004D6EA2 /* Frameworks */,
 				D8E38E4D2B5F7E30004D6EA2 /* Resources */,
 				DF31B7DFA25A2839A6460C2D /* [CP] Embed Pods Frameworks */,
+				D8E38E6C2B5FC02B004D6EA2 /* R Generate */,
 			);
 			buildRules = (
 			);
@@ -195,6 +214,25 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		D8E38E6C2B5FC02B004D6EA2 /* R Generate */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "R Generate";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/WorkTimeApp/Resources/Generated/R.generated.swift\"\n";
+		};
 		DF31B7DFA25A2839A6460C2D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -222,6 +260,7 @@
 				D8E38E572B5F7E30004D6EA2 /* ViewController.swift in Sources */,
 				D8E38E532B5F7E30004D6EA2 /* AppDelegate.swift in Sources */,
 				D8E38E552B5F7E30004D6EA2 /* SceneDelegate.swift in Sources */,
+				D8E38E6E2B5FC27F004D6EA2 /* R.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
