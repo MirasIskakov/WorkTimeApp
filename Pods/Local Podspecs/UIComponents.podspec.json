@@ -1,0 +1,36 @@
+{
+  "name": "UIComponents",
+  "version": "0.1.0",
+  "license": {
+    "type": "BSD"
+  },
+  "homepage": "https://github.com/MirasIskakov/UIComponents",
+  "authors": {
+    "Miras Iskakov": "mirasiskakoff@gmail.com"
+  },
+  "summary": "A short description of UIComponents",
+  "source": {
+    "git": "https://github.com/MirasIskakov/UIComponents.git",
+    "tag": "v0.1.0"
+  },
+  "module_name": "UIComponents",
+  "swift_versions": "5.0",
+  "platforms": {
+    "ios": "14.0"
+  },
+  "source_files": "**/*.{swifts,h,n,xib,storyboard",
+  "resources": [
+    "Resources/*.{strings,xcassets,stringsdict}",
+    "Resources/**/*.{strings,stringsdict}"
+  ],
+  "frameworks": "SystemConfiguration",
+  "ios": {
+    "frameworks": "UIKit"
+  },
+  "dependencies": {
+    "SnapKit": [
+
+    ]
+  },
+  "swift_version": "5.0"
+}
